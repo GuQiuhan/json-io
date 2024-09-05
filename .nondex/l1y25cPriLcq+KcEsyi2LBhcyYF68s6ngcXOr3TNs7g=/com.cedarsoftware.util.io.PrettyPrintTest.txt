@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.cedarsoftware.util.io.PrettyPrintTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.721 s <<< FAILURE! -- in com.cedarsoftware.util.io.PrettyPrintTest
+com.cedarsoftware.util.io.PrettyPrintTest.testPrettyPrint -- Time elapsed: 0.687 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting actual:
+  "{
+  "@type":"com.cedarsoftware.util.io.PrettyPrintTest$Nice",
+  "items":{
+    "@type":"java.util.ArrayList",
+    "@items":[
+      "One",
+      1,
+      {
+        "@type":"int",
+        "value":1
+      },
+      true
+    ]
+  },
+  "dictionary":{
+    "@type":"java.util.LinkedHashMap",
+    "grade":"A",
+    "price":100.0,
+    "bigdec":{
+      "@type":"java.math.BigDecimal",
+      "value":"3.141592653589793238462643383"
+    }
+  },
+  "name":"Louie"
+}"
+to be equal to:
+  "{
+  "@type":"com.cedarsoftware.util.io.PrettyPrintTest$Nice",
+  "name":"Louie",
+  "items":{
+    "@type":"java.util.ArrayList",
+    "@items":[
+      "One",
+      1,
+      {
+        "@type":"int",
+        "value":1
+      },
+      true
+    ]
+  },
+  "dictionary":{
+    "@type":"java.util.LinkedHashMap",
+    "grade":"A",
+    "price":100.0,
+    "bigdec":{
+      "@type":"java.math.BigDecimal",
+      "value":"3.141592653589793238462643383"
+    }
+  }
+}"
+when ignoring newlines (\n, \r\n).
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.cedarsoftware.util.io.PrettyPrintTest.testPrettyPrint(PrettyPrintTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+

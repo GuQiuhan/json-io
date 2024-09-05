@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/qiuhang2/mp1/json-io/.nondex
+nondexJarDir=/home/qiuhang2/mp1/json-io/.nondex
+nondexExecid=kEsrrt2EQFFMP6fXRbADNdG5bFg21S0GoSu9Z1fhbuI=
+nondexLogging=CONFIG
+test=
